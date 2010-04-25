@@ -604,7 +604,7 @@ logc=1,logr=2,len=0;
 					{
 						clear();
 						strcpy(htopic,"Help/");
-						strcat(htopic,"  ");
+						/* strcat(htopic,"  ");*/
 						strcat(htopic,help_topic);
 						strcat(htopic,".hlp");
 						//redraws new screen
