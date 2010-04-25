@@ -1,0 +1,15 @@
+
+  Name:  logb
+  
+  #include <math.h>
+  float logbf(float num);
+  double logb(double num);
+  long double logbl(long double num);
+  
+  The logb( ) family of functions returns the exponent of num.
+  This value is returned as a floating-point integer value.
+  A domain error is possible when num is zero.
+  logb( ), logbf( ), and logbl( ) were added by C99.
+  
+  Related Function:  ilogb
+

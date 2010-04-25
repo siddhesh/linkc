@@ -1,0 +1,14 @@
+
+  Name:  erfc
+ 
+  #include <math.h>
+  float erfcf(float arg);
+  double erfc(double arg);
+  long double erfcl(long double arg);
+
+  The erfc( ) family of functions returns the complementary
+  error function of arg.  erfc( ), erfcf( ), and erfcl( ) were
+  added by C99.
+  
+  Related Function:  erf
+

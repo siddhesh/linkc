@@ -1,0 +1,18 @@
+
+  Name:  strxfrm
+  
+  #include <string.h>
+  size_t strxfrm(char *str1, const char *str2, size_t count);
+
+  The strxfrm( ) function transforms the string pointed to by str2 
+  so that it can be used by the strcmp ( ) function and puts 
+  the result into the string pointed to by str1. 
+  
+  The following line transforms the first 10 characters of 
+  the string pointed to by s2 and puts the result in the string 
+  pointed to by s1.
+  
+  strxfrm(s1, s2, 10);
+  
+  Related Function:  strcoll
+

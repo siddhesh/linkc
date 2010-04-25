@@ -1,0 +1,22 @@
+
+  Name:  atan
+ 
+  #include <math.h>
+  float atanf(float arg);
+  
+  The atan( ) family of functions returns the arc tangent of arg.
+
+  Example:
+  #include <math.h>
+  #include <stdio.h>
+  int main (void)
+  {  double val = -1.0;
+     do 
+     {   printf(''Arc tangent of %f is %f.\n", val, atan(val));
+         val += 0.1;
+     } while(val<=1.0);
+     return 0;
+  }
+  
+  Related Functions:  asin, acos, atan2, tan, cos, sin, sinh
+

@@ -1,0 +1,20 @@
+
+  Name:  setlocale
+  
+  #include <locale.h>
+  char *setlocale(int type, const char *locale);
+  
+  The setlocale( ) function returns a pointer to a string
+  associated with the type parameter.
+  
+  Example:
+  #include <locale.h>
+  #include <stdio.h>
+  int main(void)
+  {
+    printf(setlocale(LC_ALL, ''"));
+    return 0;
+  }
+
+  Related Functions:  localeconv,time,strcoll,and strftime
+

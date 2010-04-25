@@ -1,0 +1,16 @@
+
+  Name:  qsort
+  
+  #include <stdlib.h>
+  void qsort(void *buf, size_t num, size_t size,
+             int (*compare) (const void *, const void *));
+
+  The qsort( ) function sorts the array pointed to by buf using a 
+  Quicksort (developed by C. A. R.Hoare). Quicksort is generally 
+  considered the best general-purpose sorting algorithm. The number
+  of elements in the array is specified by num, and the size 
+  (in bytes) of each element is described by size.
+
+  Related Function:  bsearch
+
+

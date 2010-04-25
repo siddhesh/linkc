@@ -1,0 +1,12 @@
+
+  Name:  putw
+  
+  #include <stdio.h>
+  int putw(int w, FILE *stream);
+  
+  putw() writes the word w (that is, an int) to stream.  It is 
+  provided for compatibility with SVr4, but we recommend you use 
+  fwrite instead.
+  
+  Related Functions:  ferror, fread, fwrite, getc, putc
+

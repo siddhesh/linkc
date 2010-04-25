@@ -1,0 +1,21 @@
+ 
+  Name:  strspn
+ 
+  #include <string.h>
+  size_t strspn(const char *str1, const char *str2);
+  
+  The strspn( ) function returns the length of the initial 
+  substring of the string pointed by str1 that is made up of 
+  those characters contained in the string pointed to by str2. 
+  
+  Example:
+  #include <string.h>
+  #include <stdio.h>
+  int main(void)
+  { int len;
+    len = strspn("this is a test","siht ");
+    printf(''%d", len);
+    return 0;
+  }
+  
+  Related Functions: strpbrk,strrchr,strstr,and strtok.

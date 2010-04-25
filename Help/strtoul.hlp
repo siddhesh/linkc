@@ -1,0 +1,22 @@
+
+  Name:  strtoul
+  
+  #include <stdlib.h>
+  unsigned long int strtoul(const char *start, 
+                            char **end,int radix);
+  
+  The strtoul( ) function converts the string representation of a 
+  number stored in the string pointed to by start into an unsigned 
+  long int and returns the result. The base of the number is 
+  determined by radix.
+  
+  Example:
+  unsigned long int read_unsigned_long(void)
+  { char start[80], *end;
+    printf("Enter a hex number: ");
+    gets(start);
+    return strtoul(start, &end, 16);
+  }
+
+  Related Functions:  strtol and strtoull
+

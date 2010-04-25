@@ -1,0 +1,20 @@
+
+  Name:  setbuf
+  
+  #include <stdio.h>
+  void setbuf(FILE *stream, char *buf);
+  
+  The setbuf( ) function specifies the buffer that stream will use 
+  or, if called with buf set to null, turns off buffering. If a 
+  programmer-defined buffer is to be specified, it must be BUFSIZ 
+  characters long.BUFSIZ is defined in <stdio.h> .
+  
+  Example:
+  char buffer[BUFSIZ];
+  ·
+  ·
+  ·
+  setbuf(fp, buffer);
+
+  Related Functions:  fopen, fclose, and setvbuf
+

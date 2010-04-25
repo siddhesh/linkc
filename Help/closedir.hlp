@@ -1,0 +1,16 @@
+ 
+  Name:  closedir
+   
+  #include <sys/types.h>
+  #include <dirent.h>
+  int closedir(DIR *dirp);
+
+  The  closedir()  function  closes  the directory stream 
+  associated with dirp.  A successful call to closedir() also 
+  closes the underlying  file descripotr  associated with dirp.
+  The directory stream descriptor dirp is not available after 
+  this call.
+
+  Related Functions:  readdir, rewinddir
+
+ 

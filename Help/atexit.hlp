@@ -1,0 +1,23 @@
+
+  Name:  atexit
+  
+  #include <stdlib.h>
+  int atexit(void (*func)(void));
+
+  The atexit( ) function causes the function pointed to by func
+  to be called upon normal program termination.
+
+  Example:
+  #include <stdlib.h>
+  #include <stdio.h>
+  void done(void);
+  int main(void)
+  {  if (atexit(done)) printf(''Error in atexit().");
+     return 0;
+  }
+  void done(void)
+  {  printf("Hello There"); }
+  
+  Related Functions:  exit and abort
+
+

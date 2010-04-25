@@ -1,0 +1,21 @@
+
+  Name:  strcspn
+  
+  #include <string.h>
+  size_t strcspn(const char *str1, const char *str2);
+  
+  The strcspn( ) function returns the length of the initial 
+  substring of the string pointed to by str1 that is made up of 
+  only those characters not contained in the string pointed to by str2. 
+
+  Example:
+  #include <string.h>
+  #include <stdio.h>
+  int main(void)
+  {
+     int len = strcspn("this is a test", "ab");
+     printf(''%d", len);
+     return 0;
+  }
+ 
+  Related Functions:  strrchr, strpbrk, strstr, and strtok.

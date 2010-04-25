@@ -1,0 +1,23 @@
+
+  Name:  memchr
+ 
+  #include <string.h>
+  void *memchr(const void *buffer, int ch, size_t count);
+  
+  The memchr( ) function searches the array pointed to by 
+  buffer for the first occurrence of ch in the first count 
+  characters.The memchr( ) function returns a pointer to the 
+  first occurrence of ch in buffer, or it returns a null
+  
+  #include <stdio.h>
+  #include <string.h>
+  int main(void)
+  { char *p;
+    p = memchr("this is a test", ' ', 14);
+    printf(p);
+    return 0;
+  }
+  
+  Related Functions:  memcpy and isspace
+
+

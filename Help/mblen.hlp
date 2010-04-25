@@ -1,0 +1,14 @@
+
+  Name:  mblen
+  
+  #include <stdlib.h>
+  int mblen(const char *str, size_t size);
+  
+  The mblen( ) function returns the length (in bytes) of a 
+  multibyte character pointed to by str. Only the first size 
+  number of characters are examined. It returns on error.
+  
+  Example:
+  printf("%d", mblen(mb, 2));
+  
+  Related Functions : mbtowc and wctomb

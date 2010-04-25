@@ -1,0 +1,19 @@
+
+  Name:  strcoll
+ 
+  #include <string.h>
+  int strcoll(const char *str1, const char *str2);
+
+  The strcoll( ) function compares the string pointed to by str1 
+  with the one pointed to by str2. The comparison is performed 
+  in accordance with the locale specified using the setlocale( ) 
+  The strcoll( ) function returns an integer 
+  
+  Less than zero                str1 is less than str2
+  Zero                          str1 is equal to str2      
+  Greater than zero             str1 is greater than str2
+
+  This code fragment prints Equal on the screen:
+  if(strcoll("hi", "hi")) printf("Equal");
+  
+  Related Functions: memcmp and strcmp.

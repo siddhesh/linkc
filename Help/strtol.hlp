@@ -1,0 +1,22 @@
+
+  Name:  strtol
+  
+  #include <stdlib.h>
+  long int strtol(const char *start, char **end, int radix);
+  
+  The strtol( ) function converts the string representation of a 
+  number stored in the string pointed to by start into a long int
+  and returns the result. The base of the number is determined by 
+  radix. If radix is zero, the base is determined by the rules that
+  govern constant specification. 
+  
+  Example:
+  long int read_long(void)
+  { char start[80], *end;
+    printf("Enter a number: ");
+    gets(start);
+    return strtol(start, &end, 10);
+  }
+
+  Related Functions:  atol and strtoll
+

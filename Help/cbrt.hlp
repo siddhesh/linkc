@@ -1,0 +1,14 @@
+
+  Name:  cbrt
+ 
+  #include <math.h>
+  float cbrtf(float num);
+  
+  The cbrt( ) family of functions returns the cube root of num.
+  cbrt( ), cbrtf( ), and cbrtl( ) were added by C99.
+  
+  Example:
+  printf("%f", cbrt(8));
+
+  Related Function:  sqrt
+

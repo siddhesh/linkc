@@ -1,0 +1,18 @@
+
+  Name:  clock
+  
+  #include <time.h>
+  clock_t clock(void);
+  
+  The clock( ) function returns a value that approximates the 
+  amount of time the calling program has been running. To transform
+  this value into seconds, divide it by CLOCKS_PER_SEC.
+                                              
+  Example:
+  void elapsed_time(void)
+  {
+    printf(''Elapsed time: %u secs.\n", clock()/CLOCKS_PER_SEC);
+  }
+
+  Related Functions:  time, asctime, and ctime
+

@@ -1,0 +1,14 @@
+ 
+  Name:  tgamma
+  
+  #include <math.h>
+  float tgammaf(float arg);
+  double tgamma(double arg);
+  long double tgammal(long double arg);
+ 
+  The tgamma( ) family of functions returns the gamma
+  function of arg.tgamma( ), tgammaf( ), and tgammal( ) were
+  added by C99.
+  
+  Related Function:  lgamma
+

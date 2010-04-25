@@ -1,0 +1,14 @@
+
+  Name:  fma
+  
+  #include <math.h>
+  float fmaf(float a, float b, float c);
+  double fma(double a, double b, double c);
+  long double fmal(long double a, long double b, long double c);
+
+  The fma( ) family of functions returns the value of a * b + c.
+  Rounding takes place only once, after the entire operation has
+  been completed.fma( ), fmaf( ), and fmal( ) were defined by C99.
+
+  Related Functions: round, lround, and llround
+

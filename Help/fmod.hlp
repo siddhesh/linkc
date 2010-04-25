@@ -1,0 +1,21 @@
+
+  Name:  fmod
+  
+  #include <math.h>
+  float fmodf(float a, float b);
+  double fmod(double a, double b);
+  long double fmodl(long double a, long double b);
+
+  The fmod( ) family of functions returns the remainder of a/b.
+  fmodf( ) and fmodl( ) were added by C99.
+
+  Example: 
+  #include <math.h>
+  #include <stdio.h>
+  int main(void)
+   {
+     printf(''%1.1f", fmod(10.0, 3.0));return 0;
+   }
+   
+  Related Functions: ceil, floor, and fabs
+

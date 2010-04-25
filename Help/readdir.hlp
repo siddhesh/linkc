@@ -1,0 +1,13 @@
+
+  Name:  readdir
+  
+  int readdir(unsigned int fd, struct old_linux_dirent *dirp,
+                   unsigned int count);
+                   
+  readdir() reads one old_linux_dirent structure from the directory
+  referred to by the file descriptor fd into the buffer pointed to 
+  by dirp.The argument count is ignored; at most one 
+  old_linux_dirent structure is read.
+  
+  Related Functions:  getdents, readdir
+

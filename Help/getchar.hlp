@@ -1,0 +1,22 @@
+
+  Name:  getchar
+ 
+  #include <stdio.h>
+  int getchar(void);
+  
+  The getchar( ) function returns the next character from stdin.
+  The character is read as an unsigned char that is converted to 
+  an integer.
+  
+  Example
+  #include <stdio.h>
+  int main(void)
+  { char s[256], *p;
+    p = s;
+    while((*p++ = getchar())!= '\n') ;
+    *p = '\0'; /* add null terminator */
+    printf(s);return 0; 
+  }
+  
+  Related Functions:  fputc, fgetc, putc, and fopen
+

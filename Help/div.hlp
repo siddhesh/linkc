@@ -1,0 +1,22 @@
+
+  Name:  div
+ 
+  #include <stdlib.h>
+  div_t div(int numerator, int denominator);
+
+  The div( ) function returns the quotient and the remainder of
+  the operation numerator/denominator in a structure of type div_t.
+
+  Example:
+  #include <stdlib.h>
+  #include <stdio.h>
+  int main(void)
+  {   div_t n;
+      n = div(10, 3);
+      printf("Quotient and remainder: %d %d.\n", n.quot, n.rem);
+      return 0;
+  }
+  
+  Related Functions:  ldiv and lldiv
+
+                                                      

@@ -1,0 +1,22 @@
+
+  Name:  ctime
+  
+  #include <time.h>
+  char *ctime(const time_t *time);
+  
+  The ctime( ) function returns a pointer to a string of the form
+  day month year hours:minutes:seconds year\n\0
+  string, it is necessary to copy it elsewhere.
+ 
+  Example:
+  #include <time.h>
+  #include <stdio.h>
+  int main(void)
+  {  time_t lt;
+     lt = time(NULL);
+     printf(ctime(&lt));
+     return 0;
+  }
+
+  Related Functions:  localtime, gmtime, time, and asctime
+

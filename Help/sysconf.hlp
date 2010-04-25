@@ -1,0 +1,12 @@
+
+  Name:  sysconf
+  
+  #include <unistd.h>
+  long sysconf(int name);
+  
+  POSIX allows  an application to test at compile or run time 
+  whether certain options are supported, or what the value is 
+  of certain configurable constants or limits.
+  
+  Related Functions:  bc, expr, getconf, locale
+

@@ -1,0 +1,16 @@
+
+  Name:  exp
+ 
+  #include <math.h>
+  float expf(float arg);
+  double exp(double arg);
+  long double expl(long double arg);
+
+  The exp( ) family of functions returns the natural logarithm .
+  expf( ) and expl( ) were added by C99.
+  
+  Example:
+  printf("Value of e to the first: %f.", exp(1.0));
+
+  Related Functions: exp2 and log  
+

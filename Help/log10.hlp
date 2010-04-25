@@ -1,0 +1,22 @@
+
+  Name:  log10
+ 
+  #include <math.h>
+  float log10f(float num);
+
+  The log10( ) family of functions returns the base 10 logarithm
+  for num. A domain error occurs if num is negative.
+  
+  Example:
+  #include <math.h>
+  #include <stdio.h>
+  int main(void)
+  {  double val = 1.0;
+     do {  printf(''%f %f\n", val, log10(val));
+           val++;
+        } while (val<11.0);
+     return 0;
+  }
+
+  Related Functions:  log and log2
+

@@ -1,0 +1,15 @@
+
+  Name:  assert
+
+  #include <assert.h>
+  void assert(int exp);
+
+  Its writes error information to stderr and then aborts program
+  execution if the expression exp evaluates to zero.
+  
+  Example:
+  ch = read_port();
+  assert(!(ch & 128)); 
+ 
+  Related Function:  abort
+

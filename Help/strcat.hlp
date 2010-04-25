@@ -1,0 +1,22 @@
+
+  Name:  strcat
+ 
+  #include <string.h>
+  char *strcat(char *str1, const char *str2);
+
+  The strcat( ) function concatenates a copy of str2 to str1 
+  and terminates str1 with a null. The null
+
+  Example:
+  #include <stdio.h>
+  #include <string.h>
+  int main(void)
+  { char s1[80], s2[80];
+    gets (s1);
+    gets (s2);
+    strcat(s2, s1);
+    printf(s2);
+    return 0;}
+ 
+  Related Functions:  strchr, strcmp, and strcpy
+

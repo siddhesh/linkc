@@ -1,0 +1,21 @@
+
+  Name:  fabs
+ 
+  #include <math.h>
+  float fabsf(float num);
+  double fabs(double num);
+  long double fabsl(long double num);
+
+  The fabs( ) family of functions returns the absolute value of num.
+  
+  Example:
+  #include <math.h>
+  #include <stdio.h>
+  int main(void)
+  {
+    printf(''%1.1f %1.1f", fabs(1.0), fabs(-1.0));
+    return 0;
+  }
+  
+  Related Function:  abs
+

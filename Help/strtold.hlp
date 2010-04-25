@@ -1,0 +1,16 @@
+
+  Name:  strtold
+  
+  #include <stdlib.h>
+  long double strtold(const char * restrict start,
+                            char restrict ** restrict end);
+
+  The strtold( ) function is similar to strtod( ) except that it 
+  returns a long double value. If overflow occurs, then either 
+  HUGE_VALL or –HUGE_VALL is returned, and the global variable 
+  errno is set to ERANGE , indicating a range error. If start does
+  not point to a number, no conversion takes place and zero is 
+  returned.
+  
+  Related Functions:  atof, strtod, and strtof
+

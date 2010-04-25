@@ -1,0 +1,15 @@
+
+  Name:  log1p
+  
+  #include <math.h>
+  float log1pf(float num);
+  double log1p(double num);
+  long double log1pl(long double num);
+
+  The log1p( ) family of functions returns the natural logarithm
+  for num+1. A domain error occurs if num is negative.
+  If num is a range error is possible.
+  log1p( ), log1pf( ), and log1pl( ) were added by C99.
+                       
+  Related Function:  log
+

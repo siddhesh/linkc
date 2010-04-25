@@ -1,0 +1,14 @@
+
+  Name:  ilogb
+ 
+  #include <math.h>
+  int ilogbf(float num);
+  int ilogb(double num);
+  int ilogbl(long double num);
+  
+  The ilogb( ) family of functions returns the exponent of num.
+  This value is returned as an int value.ilogb( ), ilogbf( ), and
+  ilogbl( ) were added by C99.
+  
+  Related Function:  logb
+

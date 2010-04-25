@@ -1,0 +1,14 @@
+
+  Name:  expm1
+ 
+  #include <math.h>
+  float expm1f(float arg);
+  double expm1(double arg);
+  long double expm1l(long double arg);
+
+  The expm1( ) family of functions returns the natural logarithm
+  e raised to the arg power, minus 1.expm1( ), expm1f( ), and 
+  expm1l( ) were added by C99.That is, it returns earg - 1.
+  
+  Related Functions:  exp and log
+

@@ -1,0 +1,21 @@
+
+  Name:  asin
+  
+  #include <math.h>
+  float asinf(float arg);
+  
+  The asin( ) family of functions returns the arc sine of arg.
+  The argument must be in the range to 1;
+  
+  Example:
+  #include <math.h>
+  #include <stdio.h>
+  int main(void)
+  { double val = -1.0;
+    do {   printf(''Arc sine of %f is %f.\n", val, asin(val));
+           val += 0.1;
+       } while(val<=1.0);
+    return 0;
+  }
+  
+  Related Functions:  acos, atan, atan2, sin, cos

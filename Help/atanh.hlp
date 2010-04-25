@@ -1,0 +1,15 @@
+  
+  Name:  atanh
+ 
+  #include <math.h>
+  float atanhf(float arg);
+  double atanh(double arg);
+  long double atanhl(long double arg);
+
+  The atanh() family of functions returns the arc hyperbolic
+  tangent of arg. This argument must be in the range – to 1;
+  otherwise a domain error will occur. If arg equals 1 ora range
+  error is possible.
+             
+  Related Functions:  acosh, asinh, sinh, cosh, and tanh
+

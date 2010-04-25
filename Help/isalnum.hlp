@@ -1,0 +1,22 @@
+
+  Name:  isalnum
+   
+  #include <ctype.h>  
+  int isalnum(int ch);
+  
+  The isalnum( ) function returns nonzero if its argument is 
+  either a letter  of the alphabet or a digit. If the 
+  character is not alphanumeric, zero is returned.
+  
+  #include <ctype.h>
+  #include <stdio.h>     
+  int main(void)
+  {  char ch;
+     for(;;) {
+     ch = getc(stdin);
+     if(ch == '.') break;
+     if(isalnum(ch)) printf(''%c is alphanumeric\n", ch);}
+     return 0;  }
+  
+  Related Functions:  isalpha, iscntrl, isdigit, isgraph, isprint
+

@@ -1,0 +1,14 @@
+
+  Name:  vprintf
+  
+  #include <stdio.h>
+  #include <stdarg.h>
+  int vprintf(const char *format, va_list ap);
+
+  The functions vprintf are functionally equivalent to printf( ),
+  fprintf( ), sprintf( ),and snprintf( ), respectively, except that
+  the argument list has been replaced by a pointer to a list of 
+  arguments.
+
+  Related Functions:  asprintf, dprintf, scanf, setlocale, wcrtomb
+  

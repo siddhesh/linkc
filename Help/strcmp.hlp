@@ -1,0 +1,14 @@
+
+  Name:  strcmp
+ 
+  #include <string.h>
+  int strcmp(const char *str1, const char *str2);
+
+  The strcmp( ) function lexicographically compares two strings 
+  and returns an integer based on the outcome as shown here:
+  Less than zero          str1 is less than str2
+  Zero                    str1 is equal to str2
+  Greater than zero       str1 is greater than str2
+
+  Related Functions:  strchr, strcpy, and strncmp
+

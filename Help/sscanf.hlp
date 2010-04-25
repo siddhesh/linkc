@@ -1,0 +1,22 @@
+
+  Name:  sscanf
+ 
+  #include <stdio.h>
+  int sscanf(const char *buf, const char *format, ...);
+  
+  The sscanf( ) function is identical to scanf( ) except that data
+  is read from the array pointed to by buf rather than stdin . 
+  The return value is equal to the number of variables that were
+  actually assigned values.
+  
+  Example:
+  #include <stdio.h>
+  int main(void)
+  {char str[80];
+   int i;
+   sscanf("hello 1 2 3 4 5", "%s%d", str, &i);
+   printf(''%s %d", str, i);
+   return 0;}
+ 
+  Related Functions:  scanf and fscanf
+

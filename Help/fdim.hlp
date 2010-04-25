@@ -1,0 +1,14 @@
+
+  Name:  fdim
+ 
+  #include <math.h>
+  float fdimf(float a, float b);
+  double fdim(double a, double b);
+  long double fdiml(long double a, long double b);
+
+  The fdim( ) family of functions returns zero if a is less than 
+  or equal to b. Otherwise, the result of a-b is returned.fdim( ),
+  fdimf( ), and fdiml( ) were defined by C99.
+
+  Related Functions: remainder and remquo
+

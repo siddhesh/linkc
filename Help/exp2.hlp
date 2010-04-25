@@ -1,0 +1,13 @@
+
+  Name:  exp2
+   
+  #include <math.h>
+  float exp2f(float arg);
+  double exp2(double arg);
+  long double exp2l(long double arg);
+
+  The exp2( ) family of functions returns 2 raised to the arg 
+  power.exp2( ), exp2f( ), and exp2l( ) were added by C99.
+
+  Related Functions: exp and log
+

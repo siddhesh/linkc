@@ -1,0 +1,15 @@
+
+  Name:  snprintf
+  
+  #include <stdio.h>
+  int snprintf(char * restrict buf, size_t num,
+                  const char * restrict format, ...)
+                  
+  The snprintf( ) function was added by C99.The snprintf( ) function
+  is identical to sprintf( ) except that a maximum of num
+  characters will be stored into the array pointed to by buf. 
+  On completion, this array is null terminated. Thus,snprintf( ) 
+  allows you to prevent buf from being overrun.
+  
+  Related Functions:  printf, sprintf, and fsprintf
+

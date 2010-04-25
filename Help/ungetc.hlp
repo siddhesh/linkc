@@ -1,0 +1,18 @@
+
+  Name:  ungetc
+  
+  #include <stdio.h>
+  int ungetc(int ch, FILE *stream);
+
+  The ungetc( ) function returns the character specified by the 
+  low order byte of ch to the input stream stream.
+ 
+  Example:
+   void read_word(FILE *fp, char *token)
+   {
+     while(isalpha(*token=getc(fp))) token++;
+     ungetc(*token, fp);
+   }
+  
+  Related Function:  getc
+

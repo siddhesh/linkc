@@ -1,0 +1,20 @@
+
+  Name:  modf
+  
+  #include <math.h>
+  float modff(float num, float *i);
+  double modf(double num, double *i);
+  long double modfl(long double num, long double *i);
+  
+  The modf( ) family of functions decomposes num into its integer
+  and fractional parts. The functions return the fractional portion
+  and place the integer part in the variable pointed to by i.
+
+  Example:
+  double i;
+  double f;
+  f = modf(10.123, &i);
+  printf(''%f %f",i , f);
+  
+  Related Functions:  frexp and ldexp
+

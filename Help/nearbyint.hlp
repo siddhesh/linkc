@@ -1,0 +1,15 @@
+
+  Name:  nearbyint
+ 
+  #include <math.h>
+  float nearbyintf(float arg);
+  double nearbyint(double arg);
+  long double nearbyintl(long double arg);
+
+  The nearbyint( ) family of functions returns the value of arg
+  rounded to the nearest integer.However, the number is returned
+  as a floating-point value.
+  nearbyint( ), nearbyintf( ), and nearbyintl( ) were added by C99.
+
+  Related Functions:  rint and round
+

@@ -1,0 +1,17 @@
+
+  Name:  putc
+  
+  #include <stdio.h>
+  int putc(int ch, FILE *stream);
+  
+  The putc( ) function writes the character contained in the least
+  significant byte of ch to the output stream pointed to by stream. 
+  The putc( ) function returns the character written if successful 
+  or EOF if an error occurs. If the output stream has been opened 
+  in binary mode, EOF is a valid value for ch. 
+           
+  Example:  
+  for(; *str; str++) putc(*str, fp);
+  
+  Related Functions:  fgetc, fputc, getchar, and putchar
+

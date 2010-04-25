@@ -1,0 +1,22 @@
+
+  Name:  setvbuf
+  
+  #include <stdio.h>
+  int setvbuf(FILE *stream, char *buf, int mode, size_t size);
+  
+  The setvbuf( ) function allows the programmer to specify a buffer,
+  its size, and its mode for the specified stream. The character 
+  array pointed to by buf is used as the buffer for I/O operations
+  on stream. The size of the buffer is set by size, and mode 
+  determines how buffering will be handled.
+  
+  Example:
+  #include <stdio.h>
+  char buffer[128];
+  ·
+  ·
+  ·
+  setvbuf(fp, buffer, _IOLBF, 128);
+  
+  Related Function:  setbuf
+

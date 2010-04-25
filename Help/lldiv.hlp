@@ -1,0 +1,16 @@
+
+  Name:  lldiv
+  
+  #include <stdlib.h>
+  lldiv_t lldiv(long long int numerator,long long int denominator);
+  
+  The lldiv( ) function returns the quotient and remainder of 
+  the operation numerator/denominator in an lldiv_t structure.
+  lldiv( ) was added by C99.
+  
+  The structure type lldiv_t has these two fields:
+  long long int quot; /* quotient */
+  long long int rem; /* remainder */
+
+  Related Functions:  div and ldiv
+

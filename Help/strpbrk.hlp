@@ -1,0 +1,22 @@
+
+  Name:  strpbrk
+  
+  #include <string.h>
+  char *strpbrk(const char *str1, const char *str2);
+
+  The strpbrk( ) function returns a pointer to the first character 
+  in the string pointed to by str1 that matches any character 
+  in the string pointed to by str2. 
+
+  Example:
+  #include <stdio.h>
+  #include <string.h>
+  int main (void)
+  { char *p;
+    p = strpbrk("this is a test", " absj");
+    printf (p);
+    return 0;
+  }
+  
+  Related Functions:  strspn, strrchr, strstr, and strtok
+

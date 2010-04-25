@@ -1,0 +1,13 @@
+
+  Name:  erf
+  
+  #include <math.h>
+  float erff(float arg);
+  double erf(double arg);
+  long double erfl(long double arg);
+
+  The erf( ) family of functions returns the error function
+  of arg.erf( ), erff( ), and erfl( ) were added by C99.  
+
+  Related Function:  erfc
+

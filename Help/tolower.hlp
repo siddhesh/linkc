@@ -1,0 +1,14 @@
+
+  Name:  tolower
+  
+  #include <ctype.h>
+  int tolower(int ch);
+  
+  The tolower( ) function returns the lowercase equivalent of
+  ch if ch is a letter; otherwise ch is returned unchanged.
+  
+  This code fragment displays q:
+  putchar(tolower('Q'));
+
+  Related Function:  toupper
+

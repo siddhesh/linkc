@@ -1,0 +1,22 @@
+
+  Name:  sin
+ 
+  #include <math.h>
+  float sinf(float arg);
+  double sin(double arg);
+  long double sinl(long double arg);
+  
+  The sin( ) family of functions returns the sine of arg. 
+
+  Example:
+  #include <math.h>
+  #include <stdio.h>
+  int main(void)
+  {  double val = -1.0;
+     do {  printf("Sine of %f is %f.\n", val, sin(val));
+           val += 0.1;
+        } while(val<=1.0);
+     return 0;   }
+ 
+  Related Functions:  asin, acos, atan2, atan, tan, cos, sinh,
+

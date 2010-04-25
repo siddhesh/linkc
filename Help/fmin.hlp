@@ -1,0 +1,13 @@
+
+  Name:  fmin
+ 
+  #include <math.h>
+  float fminf(float a, float b);
+  double fmin(double a, double b);
+  long double fminl(long double a, long double b);
+
+  The fmin( ) family of functions returns the lesser of a and b.
+  fmin( ), fminf( ), and fminl( ) were defined by C99.
+ 
+  Related Function:  fmax
+

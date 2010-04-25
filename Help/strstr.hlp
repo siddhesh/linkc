@@ -1,0 +1,22 @@
+
+  Name:  strstr
+ 
+  #include <string.h>
+  char *strstr(const char *str1, const char *str2);
+
+  The strstr( ) function returns a pointer to the first 
+  occurrence in the string pointed to by str1 of the string 
+  pointed to by str2. It returns a null if no match is found.
+ 
+  Example:
+  #include <string.h>
+  #include <stdio.h>
+  int main(void)
+  { char *p;
+    p = strstr("this is a test", "is");
+    printf(p);
+    return 0;
+  }
+  
+  Related Functions: strchr,strcspn,strpbrk,strspn,strtok,and strrchr
+

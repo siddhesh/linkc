@@ -1,0 +1,23 @@
+
+  Name:  difftime
+
+  #include <time.h>
+  double difftime(time_t time2, time_t time1);
+  
+  The difftime( ) function returns the difference, in seconds, 
+  between timel and time2 that is, time2 - time1.
+  
+  Example:
+  #include <time.h>
+  #include <stdio.h>
+  int main(void)
+  {  time_t start,end;volatile long unsigned t;
+     start = time(NULL);
+     for(t=0; t<5000000; t++);end = time(NULL);
+     printf(''Loop used %f seconds.\n", difftime(end, start));
+     return 0;
+  }
+  
+  Related Functions:  localtime, gmtime, time, and asctime
+
+

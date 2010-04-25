@@ -1,0 +1,21 @@
+
+  Name:  isupper
+  
+  #include <ctype.h>
+  int isupper(int ch);
+
+  The isupper( ) function returns nonzero if ch is an 
+  uppercase letter; otherwise zero is returned.
+
+  #include <stdio.h>
+  int main (void)
+  {  char ch;
+     for(;;) {
+     ch = getchar();
+     if(ch == '.') break;
+     if(isupper(ch)) printf(''%c is uppercase\n", ch);}
+     return 0;
+  }
+ 
+  Related Function:  islower
+

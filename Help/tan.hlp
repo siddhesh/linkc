@@ -1,0 +1,22 @@
+
+  Name:  tan
+ 
+  #include <math.h>
+  float tanf(float arg);
+  double tan(double arg);
+  long double tanl(long double arg);
+  
+  The tan( ) family of functions returns the tangent of arg.
+
+  Example:
+  #include <math.h>
+  #include <stdio.h>
+  int main (void)
+  {  double val = -1.0;
+     do { printf(''Tangent of %f is %f.\n", val, tan(val));val += 0.1;
+        } while(val<=1.0);
+     return 0;
+  }
+ 
+  Related Functions:  acos, asin, atan, atan2, cos
+

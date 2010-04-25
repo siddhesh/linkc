@@ -1,0 +1,16 @@
+
+  Name:  strtoll
+  
+  #include <stdlib.h>
+  long long int strtoll(const char * restrict start,
+                              char ** restrict end, int radix);
+
+  The strtoll( ) function is similar to strtol( ) except that it 
+  returns a long long int. If the result cannot be represented by a
+  long integer, LLONG_MAX or LLONG_MIN is returned, and the global
+  errno is set to ERANGE , indicating a range error. If start does
+  not point to a number, no conversion takes place and zero is 
+  returned.
+  
+  Related Functions:  atol and strto
+

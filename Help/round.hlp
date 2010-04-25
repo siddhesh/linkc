@@ -1,0 +1,16 @@
+
+  Name:  round
+ 
+  #include <math.h>
+  float roundf(float arg);
+  double round(double arg);
+  long double roundl(long double arg);
+  
+  The round( ) family of functions returns the value of arg
+  rounded to the nearest integer. However,the number is returned
+  as a floating-point value. Values precisely between two values,
+  such as 3.5,are rounded up.
+  round( ), roundf( ), and roundl( ) were added by C99.
+  
+  Related Function: lround and llround
+

@@ -1,0 +1,14 @@
+
+  Name:  lgamma
+ 
+  #include <math.h>
+  float lgammaf(float arg);
+  double lgamma(double arg);
+  long double lgammal(long double arg);
+  
+  The lgamma( ) family of functions computes the absolute value
+  of the gamma of arg and returns its natural logarithm.
+  lgamma( ), lgammaf( ), and lgammal( ) were added by C99. 
+
+  Related Function: tgamma
+

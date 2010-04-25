@@ -1,0 +1,15 @@
+
+  Name:  copysign
+  
+  #include <math.h>
+  float copysignf(float val, float signval);
+  double copysign(double val, double signval);
+  long double copysignl(long double val, long double signval);
+
+  The copysign( ) family of functions gives val the same sign as
+  the value passed in signval, and return the result. Thus, the 
+  value returned has a magnitude equal to val, but with the same 
+  sign as that of signval .
+  
+  Related Function:  fabs
+

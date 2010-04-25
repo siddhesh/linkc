@@ -1,0 +1,17 @@
+
+  Name:  strcpy
+  
+  #include <string.h>
+  char *strcpy(char *str1, const char *str2);
+  
+  The strcpy( ) function copies the contents of str2 into str1. 
+  str2 must be a pointer to a null-terminated string. 
+  The strcpy( ) function returns a pointer to str1. If str1 and 
+  str2 overlap, the behavior of strcpy( ) is undefined.
+
+  The following code fragment copies hello into string str:
+  char str[80];
+  strcpy
+  (str, ''hello");
+  
+  Related Function:  memcpy,strchr,strcmp,and strcmp.

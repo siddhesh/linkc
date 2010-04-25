@@ -1,0 +1,22 @@
+ 
+  Name:  isblank
+  
+  #include <ctype.h>
+  int isblank(int ch);
+
+  The isblank( ) function returns nonzero if ch is a character 
+  for which isspace( ) returns true and is used to separate 
+  words.
+  
+  #include <ctype.h>
+  #include <stdio.h>
+  int main(void)
+  { char ch;for(;;) {
+    ch = getchar();
+    if(ch == '.') break;
+    if(isblank(ch)) printf(''%c is a word separator\n", ch);}
+    return 0;
+   }
+   
+   Related Functions:  isalnum, isalpha, iscntrl, isdigit, isgraph
+

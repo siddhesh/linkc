@@ -1,0 +1,22 @@
+
+  Name:  fputs
+        
+  #include <stdio.h>
+  int fputs(const char *str, FILE *stream);
+  
+  The fputs( ) function writes the contents of the string pointed 
+  to by str to the specified stream. The null terminator is not 
+  written.
+  The fputs( ) function returns nonnegative on success and EOF on 
+  failure.If the stream is opened in text mode, certain character 
+  translations may take place. This means that there may not be a 
+  one-to-one mapping of the string onto the file.
+  However, if the stream is opened in binary mode, no character 
+  translations will occur, and a one-to-one mapping between the 
+  string and the file will exist.
+  
+  Example:  
+  fputs("this is a test", fp);
+  
+  Related Functions:  fgets, gets, puts, fprintf, and fscanf
+

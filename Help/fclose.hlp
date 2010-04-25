@@ -1,0 +1,22 @@
+
+  Name:  fclose
+  
+  #include <stdio.h>
+  int fclose(FILE *stream);
+  
+  The fclose( ) function closes the file associated with stream 
+  and flushes its buffer. After a call to fclose( ).
+  
+  #include <stdio.h>
+  #include <stdlib.h>
+  int main(void)
+  {
+  FILE *fp;
+  if((fp=fopen("test", "rb"))==NULL) {
+  printf(''Cannot open file.\n");
+  exit(1);  }
+  if(fclose(fp)) printf("File close error.\n");
+  return 0;  }
+
+  Related Functions:  fopen, freopen, and fflush
+

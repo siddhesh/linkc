@@ -1,0 +1,13 @@
+  
+  Name:  fmax
+
+  #include <math.h>
+  float fmaxf(float a, float b);
+  double fmax(double a, double b);
+  long double fmaxl(long double a, long double b);
+
+  The fmax( ) family of functions returns the greater of a and b.
+  fmax( ), fmaxf( ), and fmaxl( ) were defined by C99.
+  
+  Related Function:  fmin
+

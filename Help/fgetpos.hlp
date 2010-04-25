@@ -1,0 +1,22 @@
+
+  Name:  fgetpos
+  
+  #include <stdio.h>
+  int fgetpos(FILE *stream, fpos_t *position);
+  
+  For the specified stream, the fgetpos( ) function stores the 
+  current value of the file position indicator in the object 
+  pointed to by position. The object pointed to by position must
+  be of type fpos_t. The value stored there is useful only in a 
+  subsequent call to fsetpos( ).
+  
+  Example:
+  FILE *fp;
+  fpos_t file_loc;
+  .
+  .
+  .
+  fgetpos(fp, &file_loc);
+  
+  Related Functions:  fsetpos, fseek, and ftell
+

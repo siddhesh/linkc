@@ -1,0 +1,19 @@
+
+  Name:  putchar
+  
+  #include <stdio.h>
+  int putchar(int ch);
+  
+  The putchar( ) function writes the character contained in the 
+  least significant byte of ch to stdout. It is functionally 
+  equivalent to putc(ch, stdout). Because character arguments are 
+  elevated to integer at the time of the call, you can use 
+  character values as arguments to putchar( ).The putchar( ) 
+  function returns the character written if successful or EOF if 
+  an error occurs.
+  
+  Example:
+  for(; *str; str++) putchar(*str);
+
+  Related Function:  putc
+

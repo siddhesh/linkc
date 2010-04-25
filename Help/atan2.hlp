@@ -1,0 +1,21 @@
+
+  Name:  atan2
+  
+  #include <math.h>
+  float atan2f(float a, float b);
+  
+  The atan2( ) family of functions returns the arc tangent of a/b.
+
+  Example:
+  #include <math.h>
+  #include <stdio.h>
+  int main(void)
+  { double val = -1.0;
+    do {
+           printf(''Atan2 of %f is %f.\n", val, atan2(val,1.0));
+           val += 0.1;
+        } while(val<=1.0);
+    return 0;
+  }
+
+  Related Functions: asin, acos, atan, tan, cos

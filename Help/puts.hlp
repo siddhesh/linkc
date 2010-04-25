@@ -1,0 +1,22 @@
+
+  Name:  puts
+ 
+  #include <stdio.h>
+  int puts(const char *str);
+  
+  The puts( ) function writes the string pointed to by str to the
+  standard output device. The null terminator is translated to a 
+  newline.The puts( ) function returns a nonnegative value if 
+  successful and an EOF upon failure.
+  
+  Example:
+  #include <stdio.h>
+  #include <string.h>
+  int main(void)
+  { char str[80];
+    strcpy(str, "this is an example");
+    puts(str);
+    return 0;}
+  
+  Related Functions:  putc, gets, and printf
+

@@ -1,0 +1,17 @@
+
+  Name:  sqrt
+  
+  #include <math.h>
+  float sqrtf(float num);
+  double sqrt(double num);
+  long double sqrtl(long double num);
+ 
+  The sqrt( ) family of functions returns the square root of num.
+  If they are called with a negative argument, a domain error 
+  will occur.
+  
+  Example:
+  printf("%f", sqrt(16.0));
+
+  Related Functions:  exp, log, and pow
+

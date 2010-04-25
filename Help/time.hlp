@@ -1,0 +1,22 @@
+
+  Name:  Time  
+  
+  #include <time.h>
+  time_t time(time_t *time);
+
+  The time( ) function returns the current calendar time of 
+  the system. If the system has no time,is returned.
+  
+  Example:
+  #include <time.h>
+  #include <stdio.h>
+  int main(void)
+  {   struct tm *ptr;time_t lt;
+      lt = time(NULL);
+      ptr = localtime(&lt);
+      printf(asctime(ptr));
+      return 0;
+   }
+  
+  Related Functions:  localtime, gmtime, strftime, and ctime
+

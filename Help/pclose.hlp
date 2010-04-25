@@ -1,0 +1,13 @@
+
+  Name:  pclose
+  
+  #include <stdio.h>
+  int pclose(FILE *stream);
+  
+  The pclose() function waits for the associated process to 
+  terminate and returns the exit status of the command as returned
+  by wait4. The pclose() function returns -1 if wait4(2) returns an 
+  error, or some other error is detected.
+  
+  Related Functions:  fclose, fflush, fopen, stdio, system
+

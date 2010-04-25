@@ -1,0 +1,12 @@
+
+  Name:  atoll
+ 
+  #include <stdlib.h>
+  long long int atoll(const char *str);
+  
+  The atoll( ) function converts the string pointed to by str into
+  a long long int value. It is otherwise similar to atoll( ).
+  atoll( ) was added by C99.
+  
+  Related Functions:  atof, atoi, and atol
+

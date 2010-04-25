@@ -1,0 +1,23 @@
+
+  Name:  isprint
+ 
+  #include <ctype.h>
+  int isprint(int ch);
+
+  The isprint( ) function returns nonzero if ch is a printable 
+  character, including a space; otherwise zero is returned. 
+ 
+  #include <ctype.h>
+  #include <stdio.h>
+  int main(void)
+  { char ch;
+    for(;;) {
+    ch = getchar();
+    if(isprint(ch)) printf("%c is printable\n",ch);
+    if(ch == '.') break; }
+    return 0;
+  }
+  
+  Related Functions:  isalnum, isalpha, iscntrl, isdigit, isgraph
+
+

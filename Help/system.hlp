@@ -1,0 +1,20 @@
+
+  Name:  system
+  
+  #include <stdlib.h>
+  int system(const char *str);
+  
+  The system( ) function passes the string pointed to by str as a 
+  command to the command processor of the operating system. If 
+  system( ) is called with a null pointer, it will return nonzero 
+  if a command processor is present; otherwise, it will return zero.
+  
+  Example:
+  #include <stdlib.h>
+  int main(void)
+  {
+     return system(''dir");
+  }
+  
+  Related Function:  exit
+

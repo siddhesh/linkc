@@ -1,0 +1,22 @@
+
+  Name:  localtime
+
+  #include <time.h>
+  struct tm *localtime(const time_t *time);
+
+  The localtime( ) function returns a pointer to the broken-down
+  form of time in the form of a tm structure.
+  
+  Example:
+  #include <time.h>
+  #include <stdio.h>
+  int main(void)
+  { struct tm *local;time_t t;
+    t = time(NULL);local = localtime(&t);
+    printf(''Local time and date: %s\n", asctime(local));
+    local = gmtime(&t);
+    printf("UTC time and date: %s\n", asctime(local));
+    return 0; }
+
+  Related Functions:  gmtime, time, and asctime
+

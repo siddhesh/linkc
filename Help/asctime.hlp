@@ -1,0 +1,22 @@
+
+  Name:  asctime
+  
+  #include <time.h>
+  char *asctime(const struct tm *ptr);
+  
+  The asctime( ) function returns a pointer to a string that 
+  contains the information stored in the structure. 
+  
+  Example:
+  #include <time.h>
+  #include <stdio.h>
+  int main(void)
+  { struct tm *ptr;
+    time_t lt;
+    lt = time(NULL);
+    ptr = localtime(&lt);
+    printf(asctime(ptr));
+    return 0; }
+ 
+  Related Functions:  localtime, gmtime, time, and ctime
+

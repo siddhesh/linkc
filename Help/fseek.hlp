@@ -1,0 +1,22 @@
+
+  Name:  fseek
+  
+  #include <stdio.h>
+  int fseek(FILE *stream, long int offset, int origin);
+  
+  The fseek( ) function sets the file position indicator associated
+  with stream according to the values of offset and origin. 
+                                                                
+  Example:
+  struct addr 
+  { char name[40],street[40],city[40],state[3],zip[10]; } info;
+  void find(long int client_num)
+  { FILE *fp;
+    if((fp=fopen("mail", "rb")) == NULL) {
+        printf(''Cannot open file.\n");exit(1);    }
+    fseek(fp, client_num*sizeof(struct addr), SEEK_SET);
+    fread(&info, sizeof(struct addr), 1, fp);
+    fclose(fp);  }
+
+  Related Functions:  ftell, rewind, fopen, fgetpos, and fsetpos
+

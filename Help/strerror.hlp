@@ -1,0 +1,14 @@
+
+  Name:  strerror
+  
+  #include <string.h>
+  char *strerror(int errnum);
+  
+  The strerror( ) function returns a pointer to an 
+  implementation-defined string associated with the value of 
+  errnum. Under no circumstances should you modify the string.
+  
+  This code fragment prints an implementation-defined error 
+  message on the screen:
+  printf(strerror(10));
+

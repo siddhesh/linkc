@@ -1,0 +1,13 @@
+
+  Name:  remainder
+  
+  #include <math.h>
+  float remainderf(float a, float b);
+  double remainder(double a, double b);
+  long double remainderl(long double a, long double b);
+
+  remainder( ), remainderf( ), and remainderl( ) were added by C99.
+  The remainder( ) family of functions returns the remainder of a/b.
+
+  Related Function:  remquo
+

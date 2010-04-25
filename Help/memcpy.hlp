@@ -1,0 +1,22 @@
+ 
+  Name:  memcpy
+  
+  #include <string.h>
+  void *memcpy(void *to, const void *from, size_t count);
+
+  The memcpy( ) function copies count characters from the 
+  array pointed to by from into the array pointed to by to. 
+  
+  #include <stdio.h>
+  #include <string.h>
+  #define SIZE 80
+  int main(void)
+  { char buf1[SIZE], buf2[SIZE];
+    strcpy(buf1, "When, in the course of . . .");
+    memcpy(buf2, buf1, SIZE);
+    printf(buf2);
+    return 0;
+  }
+  
+  Related Function:  memmove
+

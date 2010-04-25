@@ -1,0 +1,14 @@
+
+  Name:  realloc
+ 
+  #include <stdlib.h>
+  void *realloc(void *ptr, size_t size);
+  
+  If ptr is null, realloc( ) simply allocates size bytes of memory 
+  and returns a pointer to it. If size is zero, the memory pointed
+  to by ptr is freed.If there is not enough free memory in the heap
+  to allocate size bytes, a null pointer is returned, and the 
+  original block is left unchanged.
+
+  Related Functions:  free, malloc, and calloc
+

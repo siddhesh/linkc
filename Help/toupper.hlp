@@ -1,0 +1,14 @@
+  
+  Name:  toupper
+  
+  #include <ctype.h>
+  int toupper(int ch);
+
+  The toupper( ) function returns the uppercase equivalent of
+  ch if ch is a letter; otherwise ch is returned unchanged.
+
+  This code displays A:
+   putchar(toupper('a'));
+ 
+  Related Function :  tolower
+

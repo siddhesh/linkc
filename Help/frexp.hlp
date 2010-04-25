@@ -1,0 +1,19 @@
+
+  Name:  frexp
+ 
+  #include <math.h>
+  float frexpf(float num, int *exp);
+  double frexp(double num, int *exp);
+  long double frexpl(long double num, int *exp);
+
+  The frexp( ) family of functions decomposes the number num into
+  a mantissa in the range 0.5 to less than 1
+  
+  Example:
+  int e;
+  double f;
+  f = frexp(10.0, &e);
+  printf(''%f %d", f, e);
+
+  Related Function:  ldexp
+

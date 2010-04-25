@@ -1,0 +1,24 @@
+
+  Name:  pow
+ 
+  #include <math.h>
+  float powf(float base, float exp);
+  double pow(double base, double exp);
+  long double powl(long double base, long double exp);
+
+  The pow( ) family of functions returns base raised to the exp
+  power (base exp ).
+  
+  Example:
+  #include <math.h>
+  #include <stdio.h>
+  int main(void)
+  {  double x = 10.0, y = 0.0;
+     do {    printf(''%f\n", pow(x, y));y++;
+        } while(y<11.0);
+    return 0;}
+  
+  Related Functions:  exp, log, and sqrt
+
+
+

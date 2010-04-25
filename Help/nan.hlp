@@ -1,0 +1,14 @@
+
+  Name:  nan
+ 
+  #include <math.h>
+  float nanf(const char *content);
+  double nan(const char *content);
+  long double nanl(const char *content);
+
+  The nan( ) family of functions returns a value that is not a 
+  number and that contains the string pointed to by content .
+  nan( ), nanf( ), and nanl( ) were defined by C99.
+  
+  Related Function:  isnan
+

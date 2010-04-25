@@ -1,0 +1,20 @@
+
+  Name:  tmpfile
+ 
+  #include <stdio.h>
+  FILE *tmpfile(void);
+  
+  The tmpfile( ) function opens a temporary binary file for read/
+  write operations and returns a pointer to the stream. The 
+  function automatically uses a unique filename to avoid conflicts 
+  with existing files.
+
+  Example:
+  FILE *temp;                                              
+   if((temp=tmpfile())==NULL) 
+   {
+     printf (''Cannot open temporary work file.\n");
+     exit(1);
+   }
+
+  Related Function: tmpnam.

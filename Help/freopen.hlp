@@ -1,0 +1,22 @@
+
+  Name:  freopen
+  
+  #include <stdio.h>
+  FILE *freopen(const char *fname, const char *mode, FILE *stream);
+  
+  The freopen( ) function associates an existing stream with a 
+  different file.
+  
+  Example:
+  #include <stdio.h>
+  #include <stdlib.h>
+  int main(void)
+  {FILE *fp;
+   printf("This will display on the screen.\n");
+   if((fp=freopen("OUT", "w" ,stdout))==NULL) {
+      printf(''Cannot open file.\n");  exit(1);   }
+   printf("This will be written to the file OUT.");
+   fclose(fp);   return 0;  }
+ 
+  Related Functions:  fopen and fclose
+

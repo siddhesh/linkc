@@ -1,0 +1,15 @@
+
+  Name:  unlockpt
+  
+  #define _XOPEN_SOURCE
+  #include <stdlib.h>
+  int unlockpt(int fd);
+  
+  The unlockpt() function unlocks the slave pseudo-terminal device 
+  (pty) corresponding to the master pty referred to by fd.
+  unlockpt should be called before opening the slave side of a pty.
+  When successful, unlockpt() returns 0.Otherwise, it returns -1 
+  and sets errno appropriately.
+  
+  Related Functions:  grantpt, posix_openpt, ptsname, pts
+

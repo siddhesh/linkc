@@ -1,0 +1,23 @@
+
+  Name:  calloc
+ 
+  #include <stdlib.h>
+  void *calloc(size_t num, size_t size);
+
+  The calloc( ) function allocates memory the size of which is
+  equal to num * size.
+  
+  Example:
+  #include <stdlib.h>
+  #include <stdio.h>
+  float *get_mem(void)
+  { float *p;
+    p = calloc(100, sizeof(float));
+    if(!p){  printf("Allocation Error\n");
+             exit(1); }
+    return p;  
+  } 
+
+  Related Functions:  free, malloc, and realloc
+
+

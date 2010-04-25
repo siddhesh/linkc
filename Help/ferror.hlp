@@ -1,0 +1,22 @@
+  
+  Name:  ferror
+ 
+  #include <stdio.h>
+  int ferror(FILE *stream);
+  
+  The ferror( ) function checks for a file error on the given 
+  stream. A return value of zero indicates that no error has 
+  occurred, while a nonzero value means an error.To determine the
+  exact nature of the error, use the perror( ) function.
+  
+  Example:
+  while(!done) {
+   putc(info, fp);
+   if(ferror(fp)) {
+     printf(''File Error\n");
+     exit(1);
+   }
+  }
+
+  Related Functions:  clearerr, feof, and perror
+

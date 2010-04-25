@@ -1,0 +1,22 @@
+ 
+  Name:  iscntrl
+  
+  #include <ctype.h>
+  int iscntrl(int ch);
+
+  The iscntrl( ) function returns nonzero if ch is a control 
+  character, which in ASCII environments is a value between 
+  zero and 0x1F or equal to 0x7F (DEL) else zero is returned. 
+  
+  #include <ctype.h>
+  #include <stdio.h>
+  int main(void)
+  {  char ch;for(;;) {
+     ch = getchar( );
+     if(ch == '.') break;
+     if(iscntrl(ch)) printf(''%c is a control char\n", ch);}
+    return 0;
+  }
+  
+  Related Functions:  isalnum, isalpha, isdigit, isgraph, isprint
+

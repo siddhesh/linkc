@@ -1,0 +1,18 @@
+
+  Name:  fscanf
+  
+  #include <stdio.h>
+  int fscanf(FILE *stream, const char *format, . . .);
+          
+  The fscanf( ) function works exactly like the scanf( ) function
+  except that it reads the information from the stream specified 
+  by stream instead of stdin .
+  
+  Example:
+
+  char str[80];
+  float f;
+  fscanf(fp, "%s%f", str, &f);
+  
+  Related Functions:  scanf and fprintf
+

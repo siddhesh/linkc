@@ -1,0 +1,12 @@
+ 
+  Name:  acosh
+
+  #include <math.h>
+  float acoshf(float arg);
+  
+  The acosh( ) family of functions returns the arc hyperbolic
+  cosine of arg. The argument must be zero or greater;
+  otherwise a domain error will occur.
+
+  Related Functions:  asinh, atanh, sinh, cosh, and tanh
+

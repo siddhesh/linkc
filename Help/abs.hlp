@@ -1,0 +1,18 @@
+ 
+  Name:  abs
+  
+  #include <stdlib.h>
+  int abs(int num);
+  
+  The abs( ) function returns the absolute value of num.
+  
+  Example:
+  int get_abs(void)
+  {
+    char num[80];
+    gets(num);
+    return abs(atoi(num));
+  }
+
+  Related Function:  fabs
+

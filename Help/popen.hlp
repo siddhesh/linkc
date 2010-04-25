@@ -1,0 +1,14 @@
+
+  Name:  popen
+  
+  #include <stdio.h>
+  FILE *popen(const char *command, const char *type);
+  
+  The  popen()  function  opens  a process by creating a pipe, 
+  forking, and invoking the shell.  Since a pipe is by 
+  definition unidirectional, the type argument may specify only
+  reading or writing, not both; the resulting stream is 
+  correspondingly read-only or write-only.
+  
+  Related Functions:  fclose, fflush, fopen, stdio, system
+

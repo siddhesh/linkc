@@ -1,0 +1,20 @@
+  
+  Name:  strtok
+  
+  #include <string.h>
+  char *strtok(char *str1, const char *str2);
+  
+  The strtok( ) function returns a pointer to the next token 
+  in the string pointed to by str1. 
+  
+  #include <stdio.h>
+  #include <string.h>
+  int main(void)
+  {  char *p;
+     p = strtok("The summer soldier, the sunshine patriot", " ");
+     printf(p);
+     do {  p = strtok('\0', ", ");
+           if(p) printf("|%s", p);
+         } while(p);
+     return 0;
+  }

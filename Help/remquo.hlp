@@ -1,0 +1,16 @@
+
+  Name:  remquo
+  
+  #include <math.h>
+  float remquof(float a, float b, int *quo);
+  double remquo(double a, double b, int *quo);
+  long double remquol(long double a, long double b, int *quo);
+ 
+  remquo( ), remquof( ), and remquol( ) were added by C99.
+  The remquo( ) family of functions returns the remainder of a/b.
+  On return, the integer pointed to by quo will contain 
+  the quotient.
+  
+  Related Function:  remainder
+                              
+

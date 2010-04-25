@@ -1,0 +1,10 @@
+
+  Name:  atanl
+  
+  #include <math.h>
+  long double atanl(long double (x));
+  
+  atanl calculate the arc tangent of the input value.atanl return
+  the arc tangent of the input value (in the range -pi/2 to pi/2)
+  
+  Related Functions:  cos, complex, cosh,  sin, tan

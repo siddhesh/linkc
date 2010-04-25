@@ -1,0 +1,22 @@
+
+  Name:  gmtime
+ 
+  #include <time.h>
+  struct tm *gmtime(const time_t *time);
+
+  The gmtime( ) function returns a pointer to the broken-down
+  form of time in the form of a tm structure.
+  
+  Example:
+  #include <time.h>
+  #include <stdio.h>
+  int main(void)
+  {  struct tm *local, *gm;
+     time_t t;t = time(NULL);
+     local = localtime(&t);
+     printf(''Local time and date: %s\n", asctime(local));gm = gmtime(&t);
+     printf("Coordinated Universal Time and date: %s", asctime(gm));
+     return 0;  }
+ 
+  Related Functions : localtime( ), time( ), and asctime( )
+

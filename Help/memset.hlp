@@ -1,0 +1,21 @@
+
+  Name:  memset
+ 
+  #include <string.h>
+  void *memset(void *buf, int ch, size_t count);
+  
+  The memset( ) function copies the low-order byte of ch into
+  the first count characters of the array pointed to by buf. 
+  It returns buf.The most common use of memset( ) is to 
+  initialize a region of memory to some known value.
+  
+  This fragment initializes to null the first 100 bytes of 
+  the array pointed to by buf. Then it sets the first 10 bytes 
+  to X and displays the string XXXXXXXXXX .
+ 
+  memset(buf, '\0', 100);
+  memset(buf, 'X', 10);
+  printf(buf);
+
+  Related Functions:  memcmp ,memcpy , and memmove
+

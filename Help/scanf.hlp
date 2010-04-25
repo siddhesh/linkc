@@ -1,0 +1,22 @@
+
+  Name:  scanf
+  
+  #include <stdio.h>
+  int scanf(const char *format, ...);
+  
+  The scanf( ) function is a general-purpose input routine that 
+  reads the stream stdin and stores the information in the 
+  variables pointed to in its argument list.
+  
+  Example:
+  #include <stdio.h>
+  int main(void)
+  { char str[80], str2[80];int i;
+    scanf(''%s%d", str, &i);
+    scanf("%79s", str);
+    scanf("%s%*d%s", str, str2);
+    return 0;
+  }
+
+  Related Functions:  printf and fscanf
+

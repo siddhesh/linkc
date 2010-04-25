@@ -1,0 +1,21 @@
+
+  Name:  access
+  
+  #include <math.h>
+  int access(const char *filename, int amode);
+  
+  access checks the file named by filename to determine if it
+  exists, and  whether it can be read, written to, or executed.
+  
+  Example:
+  #include <stdio.h>
+  #include <io.h>
+  int file_exists(char *filename);
+  int main(void)
+  {printf("Does NOTEXIST.FIL exist: %s\n",
+   file_exists("NOTEXISTS.FIL") ? "YES" : "NO");
+   return 0;}
+  int file_exists(char *filename)
+  { return (access(filename, 0) == 0);}
+   
+   Related Functions:  chmod, fstat, stat

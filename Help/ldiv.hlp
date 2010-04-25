@@ -1,0 +1,22 @@
+
+  Name:  ldiv
+  
+  #include <stdlib.h>
+  ldiv_t ldiv(long int numerator, long int denominator);
+  
+  The ldiv( ) function returns the quotient and remainder of 
+  the operation numerator/denominator in an ldiv_t structure.
+
+  Example: 
+  #include <stdlib.h>
+  #include <stdio.h>
+  int main(void)
+  {  ldiv_t n;
+     n = ldiv(10L, 3L);
+     printf("Quotient and remainder: %ld %ld.\n", n.quot, n.rem);
+     return 0;
+  }
+  
+  Related Functions:  div and lldiv
+
+

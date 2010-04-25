@@ -1,0 +1,17 @@
+  
+  Name:  ceil
+  
+  #include <math.h>
+  float ceilf(float num);
+  double ceil(double num);
+  long double ceill(long double num);
+ 
+  The ceil( ) family of functions returns the smallest integer
+  not less than num. For example, given 1.02, ceil( ) would 
+  return 2.0. Given 1.02, ceil( ) would return -1.
+  
+  Example:
+  printf("%f", ceil(9.9));
+   
+  Related Functions: floor and fmod
+

@@ -1,0 +1,12 @@
+
+  Name:  telldir
+  
+  #include <dirent.h>
+  off_t telldir(DIR *dirp);
+  
+  The telldir() function returns the current location associated 
+  with the directory stream dirp.On success, the telldir() function
+  returns the current location in the directory stream.On error, -1 
+  is returned, and errno is set appropri-ately.
+  
+  Related Functions:  closedir, opendir, readdir, rewinddir, scandir

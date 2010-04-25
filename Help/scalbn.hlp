@@ -1,0 +1,17 @@
+
+  Name:  scalbn
+  
+  #include <math.h>
+  float scalbnf(float val, int exp);
+  double scalbn(double val, int exp);
+  long double scalbnl(long double val, int exp);
+  
+  scalbn( ), scalbnf( ), and scalbnl( ) were added by C99.
+  The scalbn( ) family of functions returns the product of val and
+  FLT_RADIX raised to the exp power, that is,
+    val * FLT_RADIX exp
+  The macro FLT_RADIX is defined in <float.h>, and its value is the
+  radix of exponent representation.
+  
+  Related Function:  scalbln
+

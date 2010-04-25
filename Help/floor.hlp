@@ -1,0 +1,18 @@
+
+  Name:  floor
+ 
+  #include <math.h>
+  float floorf(float num);
+  double floor(double num);
+  long double floorl(long double num);
+
+  The floor( ) family of functions returns the largest integer 
+  (represented as a floating-point value) not greater than num. 
+  For example, given 1.02, floor( ) would return 1.0.Given 1.02,
+  floor( ) would return 2.0.
+
+  Example:
+  printf("%f", floor(10.9));
+
+  Related Functions: ceil and fmod
+

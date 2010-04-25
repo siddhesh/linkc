@@ -1,0 +1,22 @@
+  
+  Name:  memmove
+  
+  #include <string.h>
+  void *memmove(void *to, const void *from, size_t count);
+
+  The memmove( ) function copies count characters from the 
+  array pointed to by from into the array pointed to by to. 
+  
+  #include <stdio.h>
+  #include <string.h>
+  #define SIZE 80
+  int main(void)
+  { char str[SIZE], *p;
+    strcpy(str, "When, in the course of . . .");
+    p = str + 10;
+    memmove(str, p, SIZE);
+    printf(''result after shift: %s", str);
+    return 0; }
+ 
+  Related Function:  memcpy
+

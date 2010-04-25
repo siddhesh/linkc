@@ -1,0 +1,20 @@
+
+  Name:  fopen
+  
+  #include <stdio.h>
+  FILE *fopen(const char *fname, const char *mode);
+
+  The fopen( ) function opens a file whose name is pointed to by
+  fname and returns the stream that is associated with it. 
+  
+  Example:
+  
+  FILE *fp;
+  if((fp=fopen("test", "rb+"))==NULL) 
+  {
+    printf("Cannot open file.\n");
+    exit(1);
+  }
+ 
+  Related Functions:  fclose, fread, fwrite, putc, and getc
+

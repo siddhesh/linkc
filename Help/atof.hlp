@@ -1,0 +1,22 @@
+
+  Name:  atof
+ 
+  #include <stdlib.h>
+  double atof(const char *str);
+
+  The atof( ) function converts the string pointed to by str 
+  into a double value.
+ 
+  Example:
+  #include <stdlib.h>
+  #include <stdio.h>
+  int main(void)
+  {
+   char num1[80], num2[80];printf("Enter first: ");
+   gets(num1);printf(''Enter second: ");
+   gets(num2);printf("The sum is: %lf.", atof(num1) + atof(num2));
+   return 0;
+  }
+
+  Related Functions:  atoi and atol
+

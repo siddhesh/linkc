@@ -1,0 +1,22 @@
+
+  Name:  getc
+  
+  #include <stdio.h>
+  int getc(FILE *stream);
+  
+  The getc( ) function returns the next character from the 
+  specified input stream and increments the file position indicator
+  
+  Example
+  #include <stdio.h>
+  #include <stdlib.h>
+  int main(int argc, char *argv[])
+  { FILE *fp;char ch;
+    if((fp=fopen(argv[1], "r"))==NULL)        {
+       printf(''Cannot open file.\n");exit(1);}
+    while((ch=getc(fp)) ! =EOF)
+       printf("%c", ch);    }
+    fclose(fp);    return 0;  }
+  
+  Related Functions:  fputc, fgetc, putc, and fopen
+

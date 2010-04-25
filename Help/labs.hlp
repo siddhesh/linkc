@@ -1,0 +1,19 @@
+
+  Name:  labs
+ 
+  #include <stdlib.h>
+  long int labs(long int num);
+
+  The labs( ) function returns the absolute value of num.
+  
+  Example:
+  long int get_labs()
+  { 
+    char num[80];
+    gets(num);
+    return labs(atol(num));
+  }
+  
+  Related Functions:  abs and labs
+
+

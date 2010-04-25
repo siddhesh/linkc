@@ -1,0 +1,15 @@
+
+  Name:  signal
+  
+  #include <signal.h>
+  void (*signal(int signal, void (*func) (int))) (int);
+
+  The signal( ) function registers the function pointed to by func
+  as a handler for the signal specified by signal. That is, the 
+  function pointed to by func will be called when signal is received
+  by your program. The header <signal.h> is required.If a function 
+  address is used, the specified handler will be executed when its 
+  signal is received.
+  
+  Related Function:  raise
+

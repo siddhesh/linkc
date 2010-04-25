@@ -1,0 +1,16 @@
+
+  Name:  rint
+
+  #include <math.h>
+  float rintf(float arg);
+  double rint(double arg);
+  long double rintl(long double arg);
+  
+  rint( ), rintf( ), and rintl( ) were added by C99.
+  The rint( ) family of functions returns the value of arg rounded
+  to the nearest integer. However, the number is returned as a 
+  floating-point value. It is possible that a floating-point 
+  exception will be raised.
+
+  Related Functions:  nearbyint and round
+

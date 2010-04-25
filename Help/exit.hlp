@@ -1,0 +1,24 @@
+  
+  Name:  exit
+  
+  #include <:stdlib.h>
+  void exit(int exit_code);
+
+  The exit( ) function causes immediate, normal termination of a 
+  program.
+  
+  Example:
+  int menu(void)
+  {   char choice;
+      do {  printf(''Enter names (E)\n");
+    	    printf("Delete name (D)\n");
+            printf("Print (P)\n");printf("Quit (Q)\n");
+            choice = getchar();
+         } while(!strchr("EDPQ", toupper(choice)));
+      if(choice=='Q') exit(0);
+      return choice;}
+  
+  Related Functions:  atexit, abort and _Exit( )
+
+  
+

@@ -1,0 +1,15 @@
+
+  Name:  nexttoward
+ 
+  #include <math.h>
+  float nexttowardf(float from, long double towards);
+  double nexttoward(double from, long double towards);
+  long double nexttowardl(long double from, long double towards);
+
+  The nexttoward( ) family of functions returns the next value
+  after from that is closer to towards.They are the same as the 
+  nextafter( ) family except that towards is a long double for all
+  three functions.
+
+  Related Function:  nextafter
+

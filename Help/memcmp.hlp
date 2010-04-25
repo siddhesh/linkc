@@ -1,0 +1,11 @@
+
+  Name:  memcmp
+ 
+  #include <string.h>
+  int memcmp(const void *buf1, const void *buf2, size_t count);
+
+  The memcmp( ) function compares the first count characters 
+  of the arrays pointed to by buf1 and buf2.
+
+  Related Functions:  memchr, memcpy, and strcmp
+

@@ -1,0 +1,15 @@
+  
+  Name:  hypot
+ 
+  #include <math.h>
+  float hypotf(float side1, float side2);
+  double hypot(double side1, double side2);
+  long double hypotl(long double side1, long double side2);
+
+  The hypot( ) family of functions returns the length of the 
+  hypotenuse given the lengths of the two opposing sides.
+  That is,the functions return the square root of the sum of the 
+  squares of side1 and side2.
+
+  Related Function:  sqrt
+

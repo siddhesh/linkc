@@ -1,0 +1,22 @@
+
+  Name:  abort
+  
+  #include <stdlib.h>
+  void abort(void);
+  
+  The abort( ) function causes immediate abnormal termination of 
+  a program. Generally, no files are flushed. In environments that
+  support it, abort( ) will return an implementation-defined value
+  to the calling process (usually the operating system) indicating
+  failure.
+  
+  Example:
+  #include <stdlib.h>
+  #include <stdio.h>
+  int main(void)
+  {  for (;;)
+     if(getchar()=='A') abort();
+     return 0;}
+
+  Related Function:  exit and atexit
+

@@ -1,0 +1,22 @@
+
+  Name:  isspace
+  
+  #include <ctype.h>
+  int isspace(int ch);
+
+  The isspace( ) function returns nonzero if ch is a 
+  white-space character, including space, horizontal tab, 
+  vertical tab, formfeed, carriage return, or newline character.
+  
+  #include <ctype.h>
+  #include <stdio.h>
+  int main(void)
+  {  char ch;for(;;) {
+     ch = getchar();
+     if(isspace(ch)) printf(''%c is white space\n", ch);
+     if(ch == '.') break;}
+     return 0;
+  }
+  
+  Related Functions:  isalnum, isalpha, isblank, iscntrl, isdigit
+

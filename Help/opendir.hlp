@@ -1,0 +1,13 @@
+
+  Name:  opendir
+  
+  #include <sys/types.h>
+  #include <dirent.h>
+  DIR *opendir(const char *name);
+  
+  The  opendir()  function  opens a directory stream corresponding
+  to the directory name, and returns a pointer to  the  directory  
+  stream. The stream is positioned at the first entry in the 
+  directory.
+  
+  Related Functions:  open, closedir, dirfd, readdir, rewinddir

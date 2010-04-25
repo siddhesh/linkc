@@ -1,0 +1,15 @@
+
+  Name:  setjmp
+  
+  #include <setjmp.h>
+  int setjmp(jmp_buf envbuf);
+  
+  The setjmp( ) macro saves the contents of the system stack in the 
+  buffer envbuf for later use by longjmp( ).It uses the header 
+  <setjmp.h>.The setjmp( ) macro returns zero upon invocation. 
+  However, longjmp( ) passes an argument to setjmp( ), and it is 
+  this value (always nonzero) that will appear to be the value of 
+  setjmp( ) after a call to longjmp( ) has occurred.
+  
+  Related Function:  longjmp
+

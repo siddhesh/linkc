@@ -1,0 +1,14 @@
+
+  Name:  fcloseall
+  
+  #define _GNU_SOURCE
+  #include <stdio.h>
+  int fcloseall(void);
+
+  The fcloseall() function closes all of the calling 
+  process's open streams. Buffered output for each  stream is 
+  written before it is closed (as for fflush(3)); buffered input
+  is discarded.The standard streams, stdin, stdout, and stderr are
+  also closed.
+  
+  Related Functions:  close, fclose, fflush, fopen, setbuf

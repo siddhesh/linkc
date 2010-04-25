@@ -1,0 +1,20 @@
+
+  Name:  remove
+  
+  #include <stdio.h>
+  int remove(const char *fname);
+
+  The remove( ) function erases the file specified by fname.
+  It returns zero if the file was successfully deleted and nonzero
+  if an error occurred.
+  
+  Example
+  #include <stdio.h>
+  int main(int argc, char *argv[])
+  {
+    if(remove(argv[1])) printf(''Remove Error");
+    return 0;
+  }
+ 
+  Related Function:  rename
+

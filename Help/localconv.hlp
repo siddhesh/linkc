@@ -1,0 +1,22 @@
+
+  Name:  localeconv
+  
+  #include <locale.h>
+  struct lconv *localeconv(void);
+
+  The localeconv( ) function returns a pointer to the lconv
+  structure. You must not alter the contents of this structure.
+  
+  Example:
+  #include <stdio.h>
+  #include <locale.h>
+  int main (void)
+  {
+     struct lconv lc;
+     lc = *localeconv();
+     printf("Decimal symbol is: %s\n", lc.decimal_point);
+     return 0;
+  }
+  
+  Related Function:  setlocale
+

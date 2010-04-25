@@ -1,0 +1,15 @@
+
+  Name:  nextafter
+ 
+  #include <math.h>
+  float nextafterf(float from, float towards);
+  double nextafter(double from, double towards);
+  long double nextafterl(long double from, long double towards);
+  
+  
+  The nextafter( ) family of functions returns the next value after
+  from that is closer to towards.nextafter( ), nextafterf( ), and
+  nextafterl( ) were defined by C99.
+  
+  Related Function:  nexttoward
+

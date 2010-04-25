@@ -1,0 +1,21 @@
+
+  Name:  strncmp
+ 
+  #include <string.h>
+  int strncmp(const char *str1, const char *str2, size_t count);
+
+  The strncmp( ) function lexicographically compares not more
+  than count characters from the two null-terminated strings 
+  and returns an integer based on the outcome.
+ 
+  #include <string.h>
+  #include <stdlib.h>
+  int main(int argc, char *argv[])
+  {
+    if(argc==3) {
+    if(!strncmp(argv[1], argv[2], 8))
+      printf("The strings are the same.\n");}
+    return 0;
+  }
+  
+  Related Functions:  strcmp, strchr, and strncpy

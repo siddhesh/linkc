@@ -1,0 +1,18 @@
+ 
+  Name:  free
+ 
+  #include <stdlib.h>
+  void free(void *ptr);
+  
+  The free( ) function returns the memory pointed to by ptr to the 
+  heap. This makes the memory available for future allocation.It is 
+  imperative that free( ) only be called with a pointer that was 
+  previously allocated using one of the dynamic allocation system's
+  functions. Using an invalid pointer in the call most likely will 
+  destroy the memory management mechanism and possibly cause a 
+  system crash. If you pass a null pointer, free( ) performs no 
+  operation.
+  
+  Related Functions:  calloc, malloc, and realloc
+
+

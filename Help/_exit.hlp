@@ -1,0 +1,15 @@
+
+  Name:  _Exit
+  
+  #include <stdlib.h>
+  void _Exit(int exit_code);
+  
+  _Exit( ) was added by C99.
+  The _Exit( ) function is similar to exit( ) except for :
+  -> No calls to termination functions registered by atexit( )
+     are made.
+  -> No calls to signal handlers registered by signal( ) are made.
+  -> Open files are not necessarily flushed or closed.
+  
+  Related Functions:  atexit, abort and exit
+

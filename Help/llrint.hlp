@@ -1,0 +1,14 @@
+
+  Name:  llrint
+ 
+  #include <math.h>
+  long long int llrintf(float arg);
+  long long int llrint(double arg);
+  long long int llrintl(long double arg);
+  
+  The llrint( ) family of functions returns the value of arg 
+  rounded to the nearest long long integer.llrint( ), llrintf( ),
+  and llrintl( ) were added by C99.
+  
+  Related Functions: lrint and rint
+

@@ -1,0 +1,15 @@
+
+  Name:  mktime
+  
+  #include <time.h>
+  time_t mktime(struct tm *time);
+  
+  The mktime( ) function returns the calendar-time equivalent of 
+  the broken-down time found in the structure pointed to by time. 
+  The elements tm_wday and tm_yday are set by the function, so they
+  need not be defined at the time of the call.If mktime( ) cannot 
+  represent the information as a valid calendar time, 1 is 
+  returned.
+
+  Related Functions:  time, gmtime, asctime, and ctime
+

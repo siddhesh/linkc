@@ -1,0 +1,14 @@
+
+  Name:  printf                  
+  
+  #include <stdio.h>
+  int printf(const char *format, ...);
+
+  The functions printf( )perform formatted output that is, they 
+  can write data in various formats that are under your control.
+  The printf( ) function writes data to the console.
+  
+  Example: 
+  printf("I like %c %s", 'C', "very much!");
+
+  Related Function:  scanf and fprintf.  

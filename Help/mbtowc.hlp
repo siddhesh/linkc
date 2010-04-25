@@ -1,0 +1,16 @@
+
+  Name:  mbtowc
+ 
+  #include <stdlib.h>
+  int mbtowc(wchar_t *out, const char *in, size_t size);
+
+  The mbtowc( ) function converts the multibyte character in the
+  array pointed to by in into its wide character equivalent and 
+  puts that result in the object pointed to by out. Only size
+  number of characters will be examined.
+  
+  Example:
+  mbtowc(widenorm, mbstr, 2);
+
+  Related Functions:  mblen and wctomb
+

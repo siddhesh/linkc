@@ -1,0 +1,16 @@
+
+  Name:  getenv
+  
+  #include <stdlib.h>
+  char *getenv(const char *name);
+ 
+  The getenv( ) function returns a pointer to environmental
+  information associated with the string pointed to by name in
+  the implementation-defined environmental information table.
+  
+  Example:
+  char *p
+  p = getevn(''DEVICES");
+  
+  Related Function:  system
+

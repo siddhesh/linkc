@@ -1,0 +1,22 @@
+  
+  Name:  strrchr
+  
+  #include <string.h>
+  char *strrchr(const char *str, int ch);
+                                                             
+  The strrchr( ) function returns a pointer to the last occurrence 
+  of the low-order byte of ch in the string pointed to by str. 
+  If no match is found, a null pointer is returned.
+  
+  Example:
+  #include <string.h>
+  #include <stdio.h>
+  int main(void)
+  { char *p;
+    p = strrchr("this is a test", 'i');
+    printf(p);
+    return 0;
+  }
+  
+  Related Functions:  strpbrk, strspn, strstr, and strtok
+

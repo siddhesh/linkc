@@ -1,0 +1,22 @@
+
+  Name:  ldexp
+  
+  #include <math.h>
+  float ldexpf(float num, int exp);
+  double ldexp(double num, int exp);
+  long double ldexpl(long double num, int exp);
+  ldexpf( ) and ldexpl( ) were added by C99.
+  
+  The ldexp( ) family of functions returns the value of num * 2exp .
+  
+  Example:
+  #include <math.h>
+  #include <stdio.h>
+  int main(void)
+  {
+    printf(''%f", ldexp(1,2));
+    return 0;
+  }
+ 
+  Related Functions:  frexp and modf
+

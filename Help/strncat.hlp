@@ -1,0 +1,20 @@
+
+  Name:  strncat
+ 
+  #include <string.h>
+  char *strncat(char *str1, const char *str2, size_t count);
+
+  The strncat( ) function concatenates not more than count 
+  characters of the string pointed to by str2 to the string 
+  pointed to by str1 and terminates str1 with a null.
+
+  Example:
+  int main()
+  { char *s1="Hello ",*s2="Linux";
+    strncat(s2, s1,strlen(s2););
+    printf(s2);
+    return 0;
+  }
+
+  Related Functions:  strcat, strnchr, strncmp, and strncpy.
+

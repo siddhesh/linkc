@@ -1,0 +1,21 @@
+
+  Name:  ftell
+  
+  #include <stdio.h>
+  long int ftell(FILE *stream);
+  
+  The ftell( ) function returns the current value of the file 
+  position indicator for the specified stream.For text streams, 
+  the return value may not be meaningful except as an argument 
+  to fseek( ) because of possible character translations, such as
+  carriage return/linefeeds being substituted for newlines, which 
+  affect the apparent size of the file.
+  The ftell( ) function returns when an error occurs.
+                               
+  Example:
+  long int i;
+  if((i=ftell(fp)) == -1L)
+  printf(''A file error has occurred.\n");
+  
+  Related Functions:  fseek and fgetpos
+

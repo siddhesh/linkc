@@ -1,0 +1,23 @@
+ 
+  Name:  isalpha
+ 
+  #include <ctype.h>
+  int isalpha(int ch);
+
+  The isalpha( ) function returns nonzero if ch is a letter of
+  the alphabet; otherwise zero is returned.
+  
+  #include <ctype.h>
+  #include <stdio.h>
+  int main(void)
+  { char ch;
+    for(;;) {
+    ch = getchar();
+    if(ch == '.') break;
+    if(isalpha(ch)) printf("%c is a letter\n", ch);}
+    return 0;
+  }
+  
+  Related Functions:  isalnum, iscntrl, isdigit, isgraph, isprint
+
+

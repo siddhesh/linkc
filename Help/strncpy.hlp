@@ -1,0 +1,18 @@
+
+  Name:  strncpy
+  
+  #include <string.h>
+  char *strncpy(char *str1, const char *str2, size_t count);
+
+  The strncpy( ) function copies up to count characters from  
+  string pointed to by str2 into the array pointed to by str1. 
+  
+  The following code fragment copies at most 79 characters of str1 
+  into str2, thus ensuring that noarray boundary overflow occurs.
+ 
+  char str1[128], str2[80];
+  gets(str1);
+  strncpy(str2, str1, 79);
+                 
+  Related Functions:  memcpy, strchr, strncat, and strncmp
+

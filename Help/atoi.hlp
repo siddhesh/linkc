@@ -1,0 +1,22 @@
+
+  Name:  atoi
+ 
+  #include <stdlib.h>
+  int atoi(const char *str);
+  
+  The atoi( ) function converts the string pointed to by str
+  into an int value.
+  
+  Example:
+  #include <stdlib.h>
+  #include <stdio.h>
+  int main(void)
+  {  char num1[80], num2[80];printf("Enter first: ");
+     gets (num1);printf(''Enter second: ");
+     gets(num2); 
+     printf("The sum is: %d.", atoi(num1)+atoi(num2));
+     return 0;
+  }
+  
+  Related Functions:  atof and atol
+

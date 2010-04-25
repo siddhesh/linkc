@@ -1,0 +1,12 @@
+
+  Name:  raise
+  
+  #include <signal.h>
+  int raise(int signal);
+  
+  The raise( ) function sends the specified by signal to the 
+  executing program. It returns zero if successful; otherwise it
+  returns nonzero. It uses the header <signal.h>.
+  
+  Related Function:  signal
+

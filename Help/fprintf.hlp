@@ -1,0 +1,22 @@
+
+  Name:  fprintf
+  
+  #include <stdio.h>
+  int fprintf(FILE *stream, const char *format, . . .);
+  
+  The fprintf( ) function outputs the values of the arguments that
+  make up the argument list as specified in the format string to 
+  the stream pointed to by stream. 
+  
+  Example:
+  #include <stdio.h>
+  #include <stdlib.h>
+  int main(void)
+  {  FILE *fp;
+     if((fp=fopen("test", "wb"))==NULL) {
+        printf(''Cannot open file.\n");  exit(1);     }
+     fprintf(fp, "this is a test %d %f", 10, 20.01);
+     fclose(fp);     return 0;  }
+  
+  Related Functions:  printf and fscanf
+

@@ -1,0 +1,20 @@
+
+  Name:  fsetpos
+  
+  #include <stdio.h>
+  int fsetpos(FILE *stream, const fpos_t *position);
+       
+  The fsetpos( ) function moves the file position indicator to the
+  location specified by the object pointed to by position. This 
+  value must have been previously obtained through a call to 
+  fgetpos( ).After fsetpos( ) is executed, the end-of-file 
+  indicator is reset. Also, any previous call to ungetc( ) is 
+  nullified.If fsetpos( ) fails, it returns nonzero. If it is 
+  successful, it returns zero.
+  
+  Example:
+  
+  fsetpos(fp, &file_loc);
+  
+  Related Functions:  fgetpos, fseek, and ftell
+

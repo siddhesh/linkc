@@ -1,0 +1,22 @@
+
+  Name:  fwrite
+  
+  #include <stdio.h>
+  size_t fwrite(const void *buf, size_t size, 
+  		size_t count,FILE *stream);
+  
+  The fwrite( ) function writes count number of objects, each 
+  object being size bytes in length, to the stream pointed to 
+  by stream from the character array pointed to by buf.
+  
+  Example:
+  #include <stdio.h>
+  #include <stdlib.h>
+  int main(void)
+  { FILE *fp;float f=12.23;
+    if((fp=fopen("test", "wb"))==NULL)       {
+      printf(''Cannot open file.\n");exit(1);}
+    fwrite(&f, sizeof(float), 1, fp);fclose(fp);return 0;  }
+  
+  Related Functions:  fread, fscanf, getc, and fgetc
+

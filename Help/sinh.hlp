@@ -1,0 +1,22 @@
+
+  Name:  sinh
+ 
+  #include <math.h>
+  float sinhf(float arg);
+  double sinh(double arg);
+  long double sinhl(long double arg);
+ 
+  The sinh family of functions returns the hyperbolic sine of arg.
+  
+  Example: 
+  #include <math.h>
+  #include <stdio.h>
+  int main(void)
+  { double val = -1.0;
+    do{  printf(''Hyperbolic sine of %f is %f.\n", val, sinh(val));
+         val += 0.1;
+      } while(val<=1.0);
+    return 0;  }
+
+  Related Functions:  asin, acos, atan2, atan, tan, cos, tanh,
+

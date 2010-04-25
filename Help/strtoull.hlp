@@ -1,0 +1,15 @@
+
+  Name:  strtoull
+ 
+  #include <stdlib.h>
+  unsigned long long int strtoull(const char *restrict start, 
+                                  char **restrict end, int radix);
+  
+  The strtoull( ) function is similar to strtoul( ) except that it 
+  returns an unsigned long long int. If the result cannot be 
+  represented as an unsigned long integer, ULLONG_MAX is returned 
+  and the global variable errno is set to ERANGE. If start does not
+  point to a number, no conversion takes place and zero is returned.
+  
+  Related Functions:  strtol and strtoul
+

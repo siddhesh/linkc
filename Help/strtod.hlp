@@ -1,0 +1,16 @@
+
+  Name:  strtod
+  
+  #include <stdlib.h>
+  double strtod(const char *start, char **end);
+  
+  The strtod( ) function converts the string representation of a 
+  number stored in the string pointed to by start into a double and
+  returns the result.The strtod( ) function works as follows. First,
+  any white space in the string pointed to by start is stripped. 
+  Next, each character that makes up the number is read. Any 
+  character that cannot be part of a floating-point number will 
+  cause this process to stop. 
+
+  Related Functions:  atof, strtold, and strtof
+

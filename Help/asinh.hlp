@@ -1,0 +1,13 @@
+
+  Name:  asinh
+  
+  #include <math.h>
+  float asinhf(float arg);
+  double asinh(double arg);
+  long double asinhl(long double arg);
+
+  The asinh( ) family of functions returns the arc hyperbolic
+  sine of arg.asinh( ), asinhf( ), and asinhl( ) were added by C99.
+
+  Related Functions:  acosh, atanh, sinh, cosh, and tanh
+

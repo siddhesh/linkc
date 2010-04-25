@@ -1,0 +1,13 @@
+
+  Name:  random
+  
+  #include <stdlib.h>
+  long int random(void);
+  
+  The random() function uses a non-linear additive feedback random
+  number generator employing a default table of size 31 long 
+  integers to return successive pseudo-random numbers in the range 
+  from 0 to RAND_MAX.The period of this random  number  generator  
+  is  very  large,  approximately  16 * ((2^31) - 1).
+  
+  Related Functions:  rand, srand

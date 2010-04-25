@@ -1,0 +1,11 @@
+
+  Name:  acosl
+  
+  #include <math.h>
+  long double acosl(long double (x));
+  
+  acosl of a real value compute the arc cosine of that value
+  acosl return the arc cosine of the input value (in the
+  range 0 to pi)
+  
+  Related Functions:  cos, complex, cosh, sin, tan

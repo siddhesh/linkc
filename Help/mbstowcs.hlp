@@ -1,0 +1,16 @@
+
+  Name:  mbstowcs
+  
+  #include <stdlib.h>
+  size_t mbstowcs(wchar_t *out, const char *in, size_t size);
+
+  The mbstowcs( ) function converts the multibyte string pointed
+  to by in into a wide-character string and puts that result in
+  the array pointed to by out. Only size number of bytes will be
+  stored in out.
+  
+  Example:
+  mbstowcs(str, mb, 4);
+ 
+  Related Functions:  wcstombs and mbtowc
+

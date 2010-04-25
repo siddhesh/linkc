@@ -1,0 +1,22 @@
+
+  Name:  rewind
+  
+  #include <stdio.h>
+  void rewind(FILE *stream);
+  
+  The rewind( ) function moves the file position indicator to the 
+  start of the specified stream. It also clears the end-of-file and
+  error flags associated with stream.
+  
+  Example:
+  void re_read(FILE *fp)
+  {
+    /* read once */
+    while(!feof(fp)) putchar(getc(fp));
+    rewind(fp);
+    /* read twice */
+    while(!feof(fp)) putchar(getc(fp));
+  }
+  
+  Related Function:  fseek
+

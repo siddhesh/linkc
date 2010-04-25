@@ -1,0 +1,22 @@
+
+  Name:  log
+
+  #include <math.h>
+  float logf(float num);
+  double log(double num);
+  long double logl(long double num);
+
+  The log( ) family of functions returns the natural logarithm 
+  for num. A domain error occurs if num is
+ 
+  Example:
+  #include <math.h>
+  #include <stdio.h>
+  int main(void)
+  {  double val = 1.0;
+     do {   printf(''%f %f\n", val, log(val));val++;
+        } while (val<11.0);
+     return 0;}
+        
+  Related Functions:  log10 and log2
+

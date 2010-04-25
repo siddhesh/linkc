@@ -1,0 +1,15 @@
+
+  Name:  strtof
+  
+  #include <stdlib.h>
+  long double strtof(const char * restrict start,
+                           char restrict ** restrict end);
+
+  The strtof( ) function is similar to strtod( ) except that it 
+  returns a float value. If overflow occurs,then either HUGE_VALF
+  or HUGE_VALF is returned, and the global variable errno is set
+  to ERANGE, indicating a range error. If start does not point to 
+  a number, no conversion takes place and zero is returned.
+  
+  Related Functions:  atof, strtod, and strtold
+

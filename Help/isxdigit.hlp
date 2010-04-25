@@ -1,0 +1,21 @@
+
+  Name:  isxdigit
+ 
+  #include <ctype.h>
+  int isxdigit(int ch);
+  
+  The isxdigit( ) function returns nonzero if ch is a 
+  hexadecimal digit; otherwise zero is returned.
+
+  #include <ctype.h>
+  #include <stdio.h>
+  int main(void)
+  { char ch;
+    for(;;) {
+    ch = getchar();
+    if(ch == '.') break;
+    if(isxdigit(ch)) printf(''%c is hexadecimal digit\n", ch);}
+   return 0;
+  }
+  
+  Related Functions:  isalnum, isalpha, iscntrl, isdigit, isgraph

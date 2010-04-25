@@ -1,0 +1,14 @@
+
+  Name:  wcstombs
+  
+  #include <stdlib.h>
+  size_t wcstombs(char *out, const wchar_t *in, size_t size);
+
+  The wcstombs( ) function converts the wide-character array 
+  pointed to by in into its multibyte equivalent and puts the 
+  result in the array pointed to by out. Only the first size bytes
+  of in are converted. Conversion stops before that if the null 
+  terminator is encountered.
+
+  Related Functions:  wctomb and mbstowcs
+

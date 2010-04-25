@@ -1,0 +1,13 @@
+
+  Name:  wctomb
+  
+  #include <stdlib.h>
+  int wctomb(char *out, wchar_t in);
+
+  The wctomb( ) function converts the wide character in in into its
+  multibyte equivalent and puts the result in the object pointed to 
+  by out. The array pointed to by out must be at least MB_CUR_MAX
+  characters long.
+
+  Related Functions:  wcstombs and mbtowc
+

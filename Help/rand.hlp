@@ -1,0 +1,22 @@
+
+  Name:  rand
+  
+  #include <stdlib.h>
+  int rand(void);
+  
+  The rand( ) function generates a sequence of pseudorandom numbers.
+  Each time it is called, an integer between zero and RAND_MAX is 
+  returned. RAND_MAX will be at least 32,767.
+  
+  Example:
+  #include <stdlib.h>
+  #include <stdio.h>
+  int main(void)
+  { int i;
+    for(i=0; i<10; i++)
+    printf(''%d ", rand());
+    return 0;
+  }
+
+  Related Function:  srand
+

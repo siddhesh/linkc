@@ -1,0 +1,13 @@
+
+  Name:  trunc
+  
+  #include <math.h>
+  float truncf(float arg);
+  double trunc(double arg);
+  long double truncl(long double arg);
+  
+  The trunc( ) family of functions returns the truncated
+  value of arg.trunc( ),truncf( ), and truncl( ) were added by C99.
+
+  Related Function:  nearbyint
+

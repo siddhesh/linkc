@@ -1,0 +1,22 @@
+
+  Name:  gets
+  
+  #include <stdio.h>
+  char *gets(char *str);
+  
+  The gets( ) function reads characters from stdin and places them 
+  into the character array pointed to by str.
+  
+  Example:
+  #include <stdio.h>
+  #include <stdlib.h>
+  int main(void)
+  { FILE *fp;char fname[128];
+    printf("Enter filename: ");
+    gets(fname);
+    if((fp=fopen(fname, "r"))==NULL)       {
+    printf(''Cannot open file.\n");exit(1);}
+    fclose(fp);return 0;  }
+  
+  Related Functions:  fputs, fgetc, fgets, and puts
+

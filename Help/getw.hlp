@@ -1,0 +1,11 @@
+
+  Name:  getw
+  
+  #include <stdio.h>
+  int getw(FILE *stream);
+  
+  getw() reads a word (that is, an int) from stream. It's provided 
+  for compatibility with SVr4.  We recommend you use fread instead.
+  Normally, getw() returns the word read.
+  
+  Related Functions:  ferror, fread, fwrite, getc, putc

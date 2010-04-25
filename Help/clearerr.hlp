@@ -1,0 +1,17 @@
+
+  Name:  clearerr
+
+  #include <stdio.h>
+  void clearerr(FILE *stream);
+
+  The clearerr( ) function resets (that is, sets to zero) 
+  the error flag associated with the stream pointed to by stream.
+  The end-of-file indicator is also reset.The error flags 
+  for each stream are initially set to zero by a successful call 
+  to fopen( ). File errors can occur for a wide variety of reasons,
+  many of which are system dependent. The exact nature of the 
+  error can be determined by calling perror( ), which displays
+  a message describing the error (see perror).
+
+  Related Functions:  feof, ferror, and perror
+

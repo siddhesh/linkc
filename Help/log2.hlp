@@ -1,0 +1,15 @@
+  
+  Name:  log2
+ 
+  #include <math.h>
+  float log2f(float num);
+  double log2(double num);
+  long double log2l(long double num);
+
+  The log2( ) family of functions returns the base 2 logarithm
+  for num. A domain error occurs if num is negative.If num is zero,
+  a range error is possible.log2( ), log2f( ), and log2l( ) were 
+  added by C99.
+  
+  Related Functions:  log and log10
+

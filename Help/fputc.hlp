@@ -1,0 +1,20 @@
+
+  Name:  fputc
+  
+  #include <stdio.h>
+  int fputc(int ch, FILE *stream);
+
+  The fputc( ) function writes the character ch to the specified 
+  stream at the current file position and then advances the file 
+  position indicator. 
+  The value returned by fputc( ) is the value of the character 
+  written. If an error occurs, EOF is returned. 
+
+  Example:
+  void write_string(char *str, FILE *fp)
+  {
+    while(*str) if(!ferror(fp)) fputc(*str++, fp);
+  }
+  
+  Related Functions:  fgetc, fopen, fprintf, fread, and fwrite
+

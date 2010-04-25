@@ -1,0 +1,15 @@
+
+  Name:  longjmp
+  
+  #include <setjmp.h>
+  void longjmp(jmp_buf envbuf, int status);
+  
+  The longjmp( ) function causes program execution to resume at the
+  point of the last call to setjmp( ).The value of status becomes 
+  the return value of setjmp( ) and is used to determine where the
+  long jump came from. The only value that is not allowed is zero. 
+  Zero is returned by setjmp( ) when it is actually called directly
+  by your program, not indirectly through the execution of longjmp.
+
+  Related Function:  setjmp
+

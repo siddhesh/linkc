@@ -1,0 +1,15 @@
+
+  Name:  strlen
+  
+  #include <string.h>
+  size_t strlen(const char *str);
+
+  The strlen( ) function returns the length of the 
+  null-terminated string pointed to by str. The nullterminator 
+  is not counted.
+
+  The following code fragment prints 5 on the screen:
+   printf("%d", strlen("hello"));
+      
+  Related Functions:  memcpy,strchr,strcmp and strncmp.
+

@@ -1,0 +1,16 @@
+  
+  Name:  feof
+  
+  #include <stdio.h>
+  int feof(FILE *stream);
+  
+  The feof( )function determines whether the end of the file 
+  associated with stream has been reached.A nonzero value is
+  returned if the file position indicator is at the end of the
+  file; zero is returned otherwise.
+
+  Example:
+  while(!feof(fp)) getc(fp);
+  
+  Related Functions:  clearerr, ferror, perror, putc, and getc
+

@@ -1,0 +1,11 @@
+
+  Name:  asinl
+  
+  #include <math.h>
+  long double asinl(long double (x));
+  
+  asinl of a real value compute the arc sine of that value.Real
+  arguments to asinl must be in the range -1 to 1. asinl return the
+  arc sine of the input value (in the range -pi/2 to pi/2)
+  
+  Related Functions:  cos, complex, cosh, sin, tan

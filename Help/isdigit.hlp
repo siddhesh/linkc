@@ -1,0 +1,21 @@
+
+  Name:  isdigit
+
+  #include <ctype.h>
+  int isdigit(int ch);
+
+  The isdigit( ) function returns nonzero if ch is a digit, 
+  that is, 0 through 9. Otherwise zero is returned.
+  
+  #include <ctype.h>
+  #include <stdio.h>
+  int main(void)
+  {  char ch;
+     for(;;) {
+     ch = getchar();
+     if(ch == '.') break;
+     if(isdigit(ch)) printf(''%c is a digit\n", ch);}
+     return 0;
+  }
+  
+  Related Functions:  isalnum, isalpha, iscntrl, isgraph, isprint

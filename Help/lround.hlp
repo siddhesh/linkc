@@ -1,0 +1,15 @@
+
+  Name:  lround
+ 
+  #include <math.h>
+  long int lroundf(float arg);
+  long int lround(double arg);
+  long int lroundl(long double arg);
+
+  The lround( ) family of functions returns the value of arg
+  rounded to the nearest long integer.Values precisely between two
+  values, such as 3.5, are rounded up.lround( ), lroundf( ), and 
+  lroundl( ) were added by C99.
+ 
+  Related Functions: llround and round
+
